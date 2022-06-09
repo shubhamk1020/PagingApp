@@ -8,6 +8,7 @@ import androidx.paging.PagingData;
 import androidx.paging.rxjava3.PagingRx;
 
 import com.mastercoding.pagingapp.model.Movie;
+import com.mastercoding.pagingapp.paging.MoviePagingsource;
 
 import io.reactivex.rxjava3.core.Flowable;
 import kotlinx.coroutines.CoroutineScope;
@@ -23,7 +24,7 @@ public class MovieViewModel  extends ViewModel {
     private void init() {
 
         //Define Paging Source
-        MoviePagingSource moviePagingSource = new MoviePagingSource();
+        MoviePagingsource moviePagingSource = new MoviePagingsource();
 
         Pager<Integer ,Movie> pager = new Pager(new PagingConfig(
                 20,
