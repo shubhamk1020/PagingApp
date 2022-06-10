@@ -13,7 +13,6 @@ import com.mastercoding.pagingapp.databinding.SingleMovieItemBinding;
 import com.mastercoding.pagingapp.model.Movie;
 
 
-
 public class MoviesAdapter extends PagingDataAdapter<Movie, MoviesAdapter.MovieViewHolder> {
 
     public static final int LOADING_ITEM = 0;
